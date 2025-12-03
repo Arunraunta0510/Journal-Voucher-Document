@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>HROne | JV Tool Documentation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    :root {
+      --primary: #06563f;
+      --secondary: #2b4891;
+      --accent: #4cafac;
+      --bg-light: #f8f9fa;
+      --text-dark: #222;
+      --text-light: #fff;
+    }
+
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background: var(--bg-light);
+      color: var(--text-dark);
+    }
+
+    header {
+      background: var(--primary);
+      color: var(--text-light);
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    header img {
+      height: 70px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+
+    header p {
+      margin: 0;
+      font-size: 1rem;
+      opacity: 0.9;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 30px auto;
+      padding: 25px;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      border-left: 6px solid var(--accent);
+      padding-left: 12px;
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+    }
+
+    h3 {
+      color: var(--secondary);
+      margin-top: 25px;
+      font-size: 1.2rem;
+    }
+
+    .form-section {
+      background: #f8f9fa;
+      padding: 20px;
+      border-radius: 8px;
+      margin: 20px 0;
+      border: 1px solid #e2e8f0;
+    }
+
+    ul {
+      margin: 10px 0 10px 20px;
+    }
+
+    footer {
+      background: var(--primary);
+      color: var(--text-light);
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      margin-top: 40px;
+    }
+
+    footer span {
+      color: var(--accent);
+      font-weight: bold;
+    }
+
+    .print-button {
+      background: var(--secondary);
+      color: var(--text-light);
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin: 20px 0;
+      float: right;
+    }
+
+    .print-button:hover {
+      background: var(--primary);
+    }
+
+    @media print {
+      .print-button {
+        display: none;
+      }
+
+      body {
+        background: white;
+      }
+
+      main {
+        box-shadow: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <img src="HROne_Logo.jpg" alt="HROne Logo">
+    <div>
+      <h1>JV Tool Documentation</h1>
+      <p>Integrated Payroll & Expense Journal Vouchers</p>
+    </div>
+  </header>
+
+  <main>
+    <!-- <button class="print-button" onclick="window.print()">Print Document</button> -->
+
+    <h2>Overview</h2>
+    <div class="form-section">
+      <p>The Journal Voucher (JV) tool in HROne automates the preparation of JVs from payroll and
+        expense modules, eliminating the need for manual file preparation. With ready-to-use
+        downloadable files or direct API integration, organizations can close their books faster,
+        reduce manual errors, and ensure compliance with accounting standards. </p>
+    </div>
+
+    <h2>Supported JV Types</h2>
+    <div class="form-section">
+      <ul>
+        <li>Salary JV</li>
+        <li>Salary Advance (Loan) JV</li>
+        <li>Settlement (FNF) JV</li>
+        <li>Expense JV</li>
+        <li>Expense Advance JV</li>
+      </ul>
+    </div>
+
+    <h2>Grouping Options</h2>
+    <div class="form-section">
+      <p><b>GL code grouping options:</b></p>
+      <ul>
+        <li>Component wise</li>
+        <li>Business unit wise</li>
+        <li>Department wise</li>
+        <li>Location wise</li>
+        <li>Employee wise</li>
+        <li>Custom grouping available at <b>₹15K per man-day</b></li>
+      </ul>
+    </div>
+
+    <h2>Output Formats</h2>
+    <div class="form-section">
+      <ul>
+        <li>Excel</li>
+        <li>CSV</li>
+        <li>JSON</li>
+        <li>API for ERP integration</li>
+        <li>FTP drop</li>
+        <li>Any additional/custom output format is available at <b>₹15K per man-day</b></li>
+      </ul>
+      <p><b>Note:</b> You can either manually export the data, drop on a FTP location, or consume
+        HROne API to fetch the data. There is no database-to-database connection support
+        available for security reasons. </p>
+    </div>
+
+    <h2>Activation & Pricing</h2>
+    <div class="form-section">
+      <ul>
+        <li>One-time activation fee: <b>₹50,000</b></li>
+        <li>Includes:
+          <ul>
+            <li>JV Tool enablement</li>
+            <li>Functional consultant support for configuration</li>
+          </ul>
+          <p><b>Note:</b> To get started, clients need to pay a one-time activation cost which covers one time
+            enablement fee and functional support to design the JV. This ensures smooth adoption and
+            readiness to use the JV tool without additional overhead. </p>
+        </li>
+        <li>For Tally integration:
+          <ul>
+            <li>Tally connector available through a third-party partner </b></li>
+            <li>One-time HROne JV Tool activation: <b>₹50,000</b></li>
+            <li>Additional partner fee: <b>₹20,000</b> (for Tally configuration & connection enablement) </li>
+          </ul>
+          <p><b>Note:</b> For clients using <b>Tally ERP</b>, a certified third-party partner provides a connector that
+            enables direct posting of JV data. In addition to the HROne JV activation fee, clients must
+            pay the partner fee for configuring the JV and establishing the Tally connection. </p>
+        </li>
+      </ul>
+    </div>
+    <h2>Integration with ERP</h2>
+    <div class="form-section">
+      <p><b>Supported ERPs:</b></p>
+      <ul>
+        <li>SAP</li>
+        <li>Oracle NetSuite</li>
+        <li>Microsoft Dynamics 365</li>
+        <li>TallyPrime (via partner connector)</li>
+        <li>Zoho ERP</li>
+      </ul>
+      <p><b>Integration Options:</b></p>
+      <ul>
+        <li>Push data via HROne API</li>
+        <li>ERP fetches JV data from HROne API</li>
+      </ul>
+    </div>
+
+    <h2>Additional Support</h2>
+    <div class="form-section">
+      <p>Available at ₹15K per man-day:</p>
+      <ul>
+        <li>Custom financial data posting</li>
+        <li>Grouping by additional dimensions</li>
+        <li>Scheduling of data posting</li>
+      </ul>
+      <p><b>Note:</b> For advanced requirements such as integrating new financial data categories, designing
+        complex grouping logic, or enabling automated FTP/API push to external systems, HROne
+        provides additional support on a paid basis. This ensures flexibility for unique customer
+        needs. </p>
+    </div>
+
+    <h2>Payment Terms for Custom Changes</h2>
+    <div class="form-section">
+      <ul>
+        <li>Feasibility approval required by Product team</li>
+        <li>Charges: <b>₹15K per man-day</b></li>
+        <li><b>100% advance payment</b> required</li>
+        <li>Development starts <b>1 week after advance</b></li>
+        <li>The delivery timeline includes 7 days from the advance payment date to prioritize the work, development time
+          as per the finalized scope, and an additional 2 weeks for UAT.</li>
+        <li>Any changes requested <b>after the UAT window </b>will be treated as new scope and
+          charged separately </li>
+      </ul>
+      <p><b>Note:</b> Custom changes are taken up only after feasibility confirmation by the Product team.
+        Once approved, clients must make full advance payment to initiate work. Development
+        begins one week post payment, with delivery timelines including development time and a
+        2-week UAT window. Any further modifications requested after UAT closure will be handled
+        as a new scope of work and billed separately. </p>
+    </div>
+
+    <h2>Not Supported </h2>
+    <div class="form-section">
+      <ul>
+        <li>No provisional accounting</li>
+        <li>No direct database posting</li>
+        <li>No cost-splitting of an employee across multiple cost centers</li>
+      </ul>
+      <p><b>Note:</b> Some use cases are not supported within the JV tool’s standard or extended capabilities.
+        These include provisional accounting entries, direct database postings (due to data
+        security reasons), and allocation of a single employee’s cost across multiple cost centers
+        based on percentages. </p>
+    </div>
+  </main>
+
+  <footer>
+    © <span>2025</span> Uneecops Workplace Solutions Private Limited.
+  </footer>
+</body>
+
+</html>
